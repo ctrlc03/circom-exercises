@@ -1,7 +1,7 @@
-[submodule "mpc-phase2-suite"]
-	path = mpc-phase2-suite
-	url = git@github.com:quadratic-funding/mpc-phase2-suite.git
-	branch = dev
 [submodule "circom-starter"]
 	path = circom-starter
 	url = git@github.com:0xPARC/circom-starter.git
+[submodule "mpc-phase2"]
+	path = mpc-phase2
+	url = git@github.com:ctrlc03/mpc-phase2-suite.git
+	branch = dev
