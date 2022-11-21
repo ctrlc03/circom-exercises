@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+circom-starter/node_modules
+mpc-phase2-suite/node_modules 
