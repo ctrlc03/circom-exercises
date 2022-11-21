@@ -17,16 +17,16 @@ jobs:
         with:
           node-version: 16
 
-      - name: Change directory
-        run: cd circom-starter
-
       - name: Install dependencies
         run: yarn install
+        working-directory: circom-starter
 
       - name: Build circuits
         run: yarn circom:dev
+        working-directory: circom-starter
 
       - name: Test
         run: yarn test 
+        working-directory: circom-starter
 
     

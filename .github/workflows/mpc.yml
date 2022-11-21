@@ -18,19 +18,16 @@ jobs:
         with:
           node-version: 16
 
-      - name: Change directory
-        run: cd mpc-phase2
-
       - name: Install dependencies
         run: yarn install
+        working-directory: mpc-phase2
 
-      - name: Change dir
-        run: cd phase2cli 
-
-      - name: Dependencies again
-        run: yarn install
+      - name: Build
+        run: yarn build
+        working-directory: mpc-phase2
 
       - name: Test
         run: yarn auth 
+        working-directory: mpc-phase2
 
     
