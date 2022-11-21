@@ -24,12 +24,19 @@ jobs:
         run: yarn install
         working-directory: mpc-phase2
 
+      - name: Install dependecies for cli
+        run: yarn install
+        working-directory: mpc-phase2/phase2cli
+
       - name: Build
         run: yarn build
         working-directory: mpc-phase2
+        working-directory: mpc-phase2/phase2cli
 
-      - name: Test
+      - name: Auth
         run: yarn auth 
         working-directory: mpc-phase2
+        working-directory: mpc-phase2/phase2cli
+
 
     
