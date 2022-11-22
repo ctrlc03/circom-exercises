@@ -21,14 +21,14 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
-        working-directory: circom-starter
+        working-directory: circom-code
 
       - name: Build circuits
         run: yarn circom:dev
-        working-directory: circom-starter
+        working-directory: circom-code
 
       - name: Test
         run: yarn test 
-        working-directory: circom-starter
+        working-directory: circom-code
 
     
